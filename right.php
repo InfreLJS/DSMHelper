@@ -1,6 +1,3 @@
-<input type="button" name="" value="">
-
-<input type="button" name="" value="">
 <div>
   <?php
       $sql = "SELECT id FROM period WHERE ((id <= 10) AND (start < now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR ((id > 10) AND (start < now() AND `end` > now())))";
