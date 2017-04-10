@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('fonts/NanumGothic.eot');
+    src: url('fonts/NanumGothic.eot?#iefix') format('embedded-opentype'), url('fonts/NanumGothic.woff') format('woff'), url('fonts/NanumGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothicB';
+    src: url('fonts/NanumGothicBold.eot');
+    src: url('fonts/NanumGothicBold.eot?#iefix') format('embedded-opentype'), url('fonts/NanumGothicBold.woff') format('woff'), url('fonts/NanumGothicBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: "NanumGothic";
+}
+
+body {
+    margin: 0;
+}
+
+div#left, div#middle, div#right {
+    height: 1000px;
+    margin: 0;
+}
+
+div#dateTime {
+    margin: auto;
+    margin-top: 50px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+div#subject {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+div#subject p#subject {
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+}
+
+div#subject p#index {
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+div#nextPrepare {
+    margin: auto;
+    text-align: center;
+    height: 38%;
+    width: 90%;
+}
+
+div#nextPrepare p {
+    font-size: 19px;
+    color: black;
+}
+
+div#bottom_bar {
+    position: fixed;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    z-index: 100;
+    bottom: 1%;
+    left: 0;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+div[id^="bottom_bar_"] {
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    bottom: 10px;
+}
+
+div#bottom_bar_today {
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    font-size: 14px;
+    bottom: 40px;
+    left: 4.5%;
+}
+
+div#bottom_bar_month {
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    font-size: 14px;
+    bottom: 40px;
+    left: 91.5%;
+}
+
+div#bottom_bar_10 {
+    left: 14%;
+}
+
+div#bottom_bar_20 {
+    left: 23%;
+}
+
+div#bottom_bar_30 {
+    left: 32%;
+}
+
+div#bottom_bar_40 {
+    left: 41%;
+}
+
+div#bottom_bar_50 {
+    left: 50%;
+}
+
+div#bottom_bar_60 {
+    left: 59%;
+}
+
+div#bottom_bar_70 {
+    left: 68%;
+}
+
+div#bottom_bar_80 {
+    left: 77%;
+}
+
+div#bottom_bar_90 {
+    left: 86%;
+}
+
+div.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+div.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+p.centered {
+    height: 250px;
+    margin-top: 95px;
+    font-size: 14px;
+}

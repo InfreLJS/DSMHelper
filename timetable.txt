@@ -1,0 +1,29 @@
+일 0
+월 1
+화 2
+수 3
+목 4
+금 5
+토 6
+
+0 네트워크
+1 영어
+2 문학
+3 미적분I
+4 미술
+5 정보보안
+6 진로와 직업
+7 창체
+8 체육
+9 한국사
+10 해킹
+11 아침식사
+12 점심식사
+13 저녁식사
+14 쉬는시간
+15 야간자습
+16 동아리
+17 멘토링
+18 방과후
+
+select timetable.date, timetable.period, period.start, period.end, subject.name from timetable left join period on timetable.period=period.id left join subject on timetable.subject=subject.id order by date asc, start asc;
