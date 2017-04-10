@@ -1,23 +1,41 @@
-<script>
-  function increase() {
-    //교시++ period
-    //마지막 교시이면 요일++
-
-  }
-  function decrease() {
-    //교시-- period
-    //첫 교시이면 요일--
-  }
-</script>
 <div class="">
-  <input type="button" name="" value="<" onclick="increase()">
+  <input type="button" name="" value="<" onclick="<?=decrease()?>">
   날짜
-  <input type="button" name="" value=">" onclick="decrease()">
+  <input type="button" name="" value=">" onclick="<?=increase()?>">
 </div>
 <div>
   <?php
     $js_class = 0;
     $js_day = 0;
+    $first_class = 1;
+    $last_class = 7;
+    function increase() {
+      //교시++ period {js_class}
+      //마지막 교시이면 요일++ {js_day}
+      // if($js_class == $last_class) {
+      //   $js_day++;
+      //   $js_class = $first_class;
+      // } else {
+      //   $js_class++;
+      // }
+      $js_class = 1;
+      if($js_class==1){
+        echo "alert('gi')";
+      }
+
+      // }
+    }
+    function decrease() {
+      //교시-- period {js_class}
+      //첫 교시이면 요일-- {js_day}
+      // if($js_class == $first_class) {
+      //   $js_day--;
+      //   $js_class = $last_class;
+      // } else {
+      //   $js_class--;
+      // }
+      $js_class--;
+    }
     $sql = "SELECT id FROM period WHERE ((id <= 10) AND (start < now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR ((id > 10) AND (start < now() AND `end` > now())))";
     $result = mysqli_query($conn, $sql);
     if ($result -> num_rows != 0) {
