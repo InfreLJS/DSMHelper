@@ -27,3 +27,5 @@
 18 방과후
 
 select timetable.date, timetable.period, period.start, period.end, subject.name from timetable left join period on timetable.period=period.id left join subject on timetable.subject=subject.id order by date asc, start asc;
+
+aa
