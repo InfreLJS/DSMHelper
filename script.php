@@ -1,7 +1,7 @@
 <link href="style.css?ver=0.5" rel="stylesheet">
 <link href="/bootstrap-3.3.4-dist/css/bootstrap.min.css?ver=0.1" rel="stylesheet">
 <script src="/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-<script src="/jquery-3.2.0.min.js"></script>
+<script src="jquery-3.2.0.min.js"></script>
 <script>
     $(document).ready(function() {
         <?php
