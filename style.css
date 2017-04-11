@@ -165,7 +165,7 @@ div.inner {
 }
 
 p.centered {
-    height: 250px;
-    margin-top: 95px;
+    margin-top: 24%;
     font-size: 14px;
+    overflow: visible;
 }
