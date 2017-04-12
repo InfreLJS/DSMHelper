@@ -22,7 +22,7 @@
     function getTime() {
         var date = new Date();
         var ht = date.getHours();
-        var h = (ht == 00) ? '오전 12' : ((ht <= 12) ? '오전 ' + ht : '오후 ' + (ht - 12));
+        var h = (ht == 00) ? '오전 12' : ((ht == 12) ? '오후 12' : ((ht <= 12) ? '오전 ' + ht : '오후 ' + (ht - 12)));
         var m = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes();
         var s = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
         var ctime = h + ":" + m + ":" + s;
