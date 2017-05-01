@@ -21,8 +21,8 @@
                 position: fixed;
                 top: 68%;
                 left: '.(((double)$row['untilt']/(30*86400))*90+5).'%;
-                width: 21%;
-                height: 25%;
+                width: 400px;
+                height: 250px;
                 border: 1px solid red;
                 border-radius: 10px;
                 background-color: white;
