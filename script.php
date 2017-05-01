@@ -1,4 +1,4 @@
-<link href="style.css?ver=1.2" rel="stylesheet">
+<link href="style.css?ver=0.5" rel="stylesheet">
 <link href="./bootstrap-3.3.4-dist/css/bootstrap.min.css?ver=0.1" rel="stylesheet">
 <script src="./bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 <script src="./jquery-3.2.0.min.js"></script>
@@ -22,7 +22,7 @@
     function getTime() {
         var date = new Date();
         var ht = date.getHours();
-        var h = (ht == 00) ? '오전 12' : ((ht == 12) ? '오후 12' : ((ht <= 12) ? '오전 ' + ht : '오후 ' + (ht - 12)));
+        var h = (ht == 00) ? '오전 12' : ((ht <= 12) ? '오전 ' + ht : '오후 ' + (ht - 12));
         var m = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes();
         var s = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
         var ctime = h + ":" + m + ":" + s;
