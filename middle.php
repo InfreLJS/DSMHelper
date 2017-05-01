@@ -21,7 +21,7 @@
                 echo '<p id="subject">'.$currClass.'</p>';
                 setcookie($cookie, $row['id']);
             }
-            $sql = "SELECT subject.name FROM timetable LEFT JOIN period ON timetable.period=period.id LEFT JOIN subject ON timetable.subject=subject.id WHERE `date`=DAYOFWEEK(now()) AND `period`>='".((int)$period+1)."' AND isBlock = 0";
+            $sql = "SELECT subject.name FROM timetable LEFT JOIN period ON timetable.period=period.id LEFT JOIN subject ON timetable.subject=subject.id WHERE `date`=DAYOFWEEK(now()) AND `period`>='".((int)$period+1)."'";
             $result = mysqli_query($conn, $sql);
             if ($result -> num_rows != 0) {
                 $row = mysqli_fetch_assoc($result);
