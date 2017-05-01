@@ -18,8 +18,8 @@
       // } else {
       //   $js_class++;
       // }
+      $js_class = 1;
       if($js_class==1){
-
         echo "alert('gi')";
       }
 
