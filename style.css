@@ -22,6 +22,8 @@
     font-family: "NanumGothic";
 }
 
+/* index.php */
+
 body {
     margin: 0;
 }
@@ -30,6 +32,8 @@ div#left, div#middle, div#right {
     height: 1000px;
     margin: 0;
 }
+
+/* middle.php */
 
 div#dateTime {
     margin: auto;
@@ -72,6 +76,8 @@ div#nextPrepare p {
     font-size: 19px;
     color: black;
 }
+
+/* bottom_bar.php */
 
 div#bottom_bar {
     position: fixed;
@@ -151,6 +157,8 @@ div#bottom_bar_80 {
 div#bottom_bar_90 {
     left: 86%;
 }
+
+/* Center Arrange */
 
 div.outer {
     display: table;

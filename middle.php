@@ -1,7 +1,6 @@
 <div id="dateTime">
     <div id="currdate"></div>
     <div id="currtime"></div>
-
 </div>
 <div id="subject">
     <?php
