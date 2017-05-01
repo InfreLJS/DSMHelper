@@ -16,7 +16,7 @@
     if ($result -> num_rows != 0) {
         $row = mysqli_fetch_assoc($result);
         $period = $row['id'];
-        $timetable_id = $_COOKIE[$cookie] + $id;
+        $timetable_id = ($_COOKIE[$cookie] + $id + 75) % 75;
         $sql = "SELECT subject.name FROM timetable LEFT JOIN period ON timetable.period=period.id LEFT JOIN subject ON timetable.subject=subject.id WHERE timetable.id = '{$timetable_id}'";
         $result = mysqli_query($conn, $sql);
         if ($result -> num_rows != 0) {
