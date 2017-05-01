@@ -16,6 +16,7 @@
                     });';
             }
         ?>
+        $("div#left, div#middle, div#right").css("height", screen.height);
     });
     var today = new Date();
 

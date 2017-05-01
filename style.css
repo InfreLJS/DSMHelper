@@ -28,11 +28,6 @@ body {
     margin: 0;
 }
 
-div#left, div#middle, div#right {
-    height: 1000px;
-    margin: 0;
-}
-
 /* middle.php */
 
 div#dateTime {
