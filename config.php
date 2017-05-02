@@ -1,6 +1,6 @@
 <?php
 	$databaseHost = 'localhost';
-	$databaseUser = 'root';
-	$databasePassword = '12341234';
-	$databaseName = 'dsmhelper';
+	$databaseUser = 'c731';
+	$databasePassword = 'bep0sitive';
+	$databaseName = 'c731';
 ?>
