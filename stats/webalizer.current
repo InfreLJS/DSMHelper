@@ -1,0 +1,170 @@
+# Webalizer V2.23-08 Incremental Data - 05/01/2017 17:33:47
+2017 5 1 17 33 47
+293 280 4 7 6 3 7913758 239 4 0 0 0
+4 218 218 1 1
+293 280 7913758 4 239 4 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+24 20 4907448 13 0 0
+51 45 2709374 24 0 0
+218 215 296936 202 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0
+0
+0
+280
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+7
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+0
+# -urls- 
+/style.css
+0 13 0 13668 0 0 0 0
+/right_iframe.php
+0 198 7928995562868008769 90792 0 1 0 0
+/jquery-3.2.0.min.js
+0 10 0 304690 0 0 0 0
+/fonts/NanumGothic.woff
+0 10 0 7146750 0 0 0 0
+/bootstrap-3.3.4-dist/css/bootstrap.min.css
+0 10 0 195417 0 0 0 0
+/bootstrap-3.3.4-dist/js/bootstrap.min.js
+0 10 0 98910 0 0 0 0
+/
+0 36 18388080 53618 4 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+66.102.6.216
+0 2 2 40360 0 0 0 0
+-
+66.102.6.218
+0 4 2 24315 1 1493654028 0 0
+/
+66.102.6.220
+0 4 3 2387128 1 1493654028 0 0
+/
+14.50.190.128
+0 283 273 5461955 2 1493660027 0 0
+/right_iframe.php
+# End Of Table - sites (monthly)
+# -sites- (daily)
+66.102.6.216
+0 2 2 40360 0 0 0 0
+-
+66.102.6.218
+0 4 2 24315 1 1493654028 0 0
+/
+66.102.6.220
+0 4 3 2387128 1 1493654028 0 0
+/
+14.50.190.128
+0 283 273 5461955 2 1493660027 0 0
+/right_iframe.php
+# End Of Table - sites (daily)
+# -referrers- 
+http://www.google.com/search
+0 2
+http://dsm.infre.kr/style.css
+1 10
+- (Direct Request)
+0 36
+http://dsm.infre.kr/
+1 4
+http://dsm.infre.kr/index.php
+1 69
+http://dsm.infre.kr/right_iframe.php
+1 172
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview) Chrome/27.0.1453 Safari/537.36
+0 7
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+0 283
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+0 3
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
