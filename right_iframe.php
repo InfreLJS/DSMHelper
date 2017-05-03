@@ -11,7 +11,7 @@
   <?php
     $cookie = "timetable_id";
     $id = $_GET['id'];
-    $sql = "SELECT id FROM period WHERE ((id = 1 OR id = 6 OR id = 12) AND (start <= now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR (start < now() AND `end` > now()))";
+    $sql = "SELECT id FROM period WHERE ((id = 2 OR id = 3 OR id = 4 OR id = 7 OR id = 8 OR id = 13) AND (start <= now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR (start < now() AND `end` > now()))";
     $result = mysqli_query($conn, $sql);
     if ($result -> num_rows != 0) {
         $row = mysqli_fetch_assoc($result);

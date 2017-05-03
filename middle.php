@@ -6,7 +6,7 @@
     <?php
         $cookie = "timetable_id";
 
-        $sql = "SELECT id FROM period WHERE ((id = 1 OR id = 6 OR id = 12) AND (start <= now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR (start < now() AND `end` > now()))";
+        $sql = "SELECT id FROM period WHERE ((id = 2 OR id = 3 OR id = 4 OR id = 7 OR id = 8 OR id = 13) AND (start <= now() AND DATE_ADD(`end`, INTERVAL 10 MINUTE) > now()) OR (start < now() AND `end` > now()))";
         $result = mysqli_query($conn, $sql);
         if ($result -> num_rows != 0) {
             $row = mysqli_fetch_assoc($result);
@@ -21,22 +21,14 @@
                 echo '<p id="subject">'.$currClass.'</p>';
                 setcookie($cookie, $row['id']);
             }
-            $sql = "SELECT subject.name FROM timetable LEFT JOIN period ON timetable.period=period.id LEFT JOIN subject ON timetable.subject=subject.id WHERE `date`=DAYOFWEEK(now()) AND `period`>='".((int)$period+1)."'";
+            $sql = "SELECT subject.name FROM timetable LEFT JOIN period ON timetable.period=period.id LEFT JOIN subject ON timetable.subject=subject.id WHERE timetable.id='".($row['id']+1)."'";
             $result = mysqli_query($conn, $sql);
             if ($result -> num_rows != 0) {
                 $row = mysqli_fetch_assoc($result);
                 $nextClass = $row['name'];
                 echo '<p id="index">NEXT</p>';
                 echo '<p id="subject">'.$nextClass.'</p>';
-            } else {
-                echo '<p id="index">NEXT</p>';
-                echo '<p id="subject">취침시간..zZ</p>';
             }
-        } else {
-            echo '<p id="index">NOW</p>';
-            echo '<p id="subject">취침시간...zZ</p>';
-            echo '<p id="index">NEXT</p>';
-            echo '<p id="subject">아침식사</p>';
         }
     ?>
 
