@@ -155,20 +155,16 @@ div#bottom_bar_90 {
 
 /* Center Arrange */
 
-div.outer {
+div.inner {
     display: table;
     width: 100%;
     height: 100%;
 }
 
-div.inner {
+p.centered {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-}
-
-p.centered {
-    margin-top: 24%;
     font-size: 14px;
-    overflow: visible;
+    padding: 10px;
 }
