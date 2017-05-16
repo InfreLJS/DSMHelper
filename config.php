@@ -1,6 +1,6 @@
 <?php
 	$databaseHost = 'db.infre.kr';
-	$databaseUser = 'c732';
+	$databaseUser = 'c731';
 	$databasePassword = 'bep0sitive';
-	$databaseName = 'c732';
+	$databaseName = 'c731';
 ?>

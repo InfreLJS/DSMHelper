@@ -14,7 +14,7 @@
 
 <div id="topics" class="outer">
     <?php
-        $sql = "SELECT homework.id, homework.description, subject.name, CONCAT(until, ' ', period.start) AS until, TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) AS untilt FROM homework LEFT JOIN timetable ON homework.timetable=timetable.id LEFT JOIN subject ON timetable.subject=subject.id LEFT JOIN period ON timetable.period=period.id WHERE TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) <= (30*86400) AND TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) >= 0";
+        $sql = "SELECT assignment.id, assignment.description, subject.name, CONCAT(until, ' ', period.start) AS until, TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) AS untilt FROM assignment LEFT JOIN timetable ON assignment.timetable=timetable.id LEFT JOIN subject ON timetable.subject=subject.id LEFT JOIN period ON timetable.period=period.id WHERE TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) <= (30*86400) AND TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) >= 0";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
             echo '<div id="topic'.$row['id'].'" class="inner" style="
@@ -30,7 +30,7 @@
             </div>';
         }
         echo '</div>';
-        $sql = "SELECT homework.id, homework.description, subject.name, CONCAT(until, ' ', period.start) AS until, TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) AS untilt FROM homework LEFT JOIN timetable ON homework.timetable=timetable.id LEFT JOIN subject ON timetable.subject=subject.id LEFT JOIN period ON timetable.period=period.id WHERE TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) <= (30*86400) AND TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) >= 0";
+        $sql = "SELECT assignment.id, assignment.description, subject.name, CONCAT(until, ' ', period.start) AS until, TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) AS untilt FROM assignment LEFT JOIN timetable ON assignment.timetable=timetable.id LEFT JOIN subject ON timetable.subject=subject.id LEFT JOIN period ON timetable.period=period.id WHERE TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) <= (30*86400) AND TIMESTAMPDIFF(SECOND, NOW(), CONCAT(until, ' ', period.start)) >= 0";
         $result = mysqli_query($conn, $sql);
         echo '<div id="dots">';
         while ($row = mysqli_fetch_assoc($result)) {
